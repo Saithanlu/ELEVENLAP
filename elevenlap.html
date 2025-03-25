@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEVEN LAB</title>
+    <link rel="icon" type="Image/eleven.lap.jpg" href="Image/eleven.lap.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            margin: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(to right, #ff8c00, #ff4500);
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 3px 3px 8px black;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .container {
+            padding: 20px;
+        }
+        button {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 15px;
+            transition: transform 0.4s, box-shadow 0.4s, background 0.4s;
+            box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5);
+        }
+        button:hover {
+            background: linear-gradient(to right, #a505a5, #ff1493);
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+        }
+        .content {
+            display: none;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            margin-top: 20px;
+            animation: slideIn 1s ease-in-out;
+            border: 2px solid #ff8c00;
+        }
+        h2 {
+            color: #ffcc00;
+            text-shadow: 2px 2px 10px rgba(255, 255, 0, 0.8);
+        }
+        h3 {
+            color: #00ffcc;
+            text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.8);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px white;
+        }
+        video {
+            width: 80%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px white;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>🚀 ELEVEN LAB 🚀</header>
+    <h3>Future Starts with Code and Creating Tomorrow, Today.</h3>
+    <div class="container">
+        <button onclick="showContent('about')">📖 ABOUT ELEVEN</button>
+        <button onclick="showContent('courses')">📚 Courses</button>
+        <button onclick="showContent('profile')">📝 Profile</button>
+        <button onclick="showContent('programs')">💡 Programs</button>
+        <button onclick="showContent('contact')">📞 Contact</button>
+        
+        <div id="about" class="content">
+            <h2>🔍 ABOUT ELEVEN LAB</h2>
+            <p><strong>ELEVEN LAB</strong> is an innovative tech school shaping the future with AI and coding.</p>
+            <h3>🎓 Founder & Director | ELEVEN LAB</h3>
+            <p><strong>I am Sai Sai, the Founder and Director of ELEVEN LAB, a leading institution specializing in IT, AI, and Coding education. At ELEVEN LAB, we provide high-quality online and onsite courses, ensuring flexible learning for students of all levels. My goal is to equip learners with future-ready tech skills and empower them to excel in the digital world. I look forward to collaborating with you!.</p>
+            <img src="./Image/sai.sai.jpg" alt="SAI" style="width: 200px; height: 200px;">
+        </div>
+        
+        <div id="courses" class="content">
+            <h2>📚 Courses at ELEVEN LAB</h2>
+            <ul>
+                <li>💻 <strong>ICT</strong></li>
+                <li>🌐 <strong>Web Development</strong></li>
+                <li>📱 <strong>App Development</strong></li>
+                <li>🎮 <strong>Game Development</strong></li>
+            </ul>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div id="profile" class="content">
+            <h2>🌟 Background</h2>
+            <p><strong>Founded in 2025</strong>, ELEVEN LAB provides year-round tech education.</p>
+            <h3>🏆 Why ELEVEN LAB?</h3>
+            <p>✅ <strong>Expert Mentors</strong><br>
+               ✅ <strong>Future-Ready Skills</strong><br>
+               ✅ <strong>Hands-on Learning</strong></p>
+        </div>
+        
+        <div id="programs" class="content">
+            <h2>💡 Programs</h2>
+            <ul>
+                <li>👨‍💻 <strong>Coding & Programming</strong></li>
+                <li>🤖 <strong>AI & Machine Learning</strong></li>
+                <li>🛡️ <strong>Cybersecurity</strong></li>
+                <li>🔧 <strong>Robotics & IoT</strong></li>
+                <li>🎮 <strong>Game Development</strong></li>
+                <li>📊 <strong>Data Science</strong></li>
+            </ul>
+        </div>
+        
+        <div id="contact" class="content">
+            <h2>📞 Contact Us</h2>
+            <p>📞 <strong>09799729151</strong><br>
+               📱 <strong>WhatsApp/Viber: 09799729151</strong><br>
+               🌐 <strong>Facebook: @ElevenLabOfficial</strong></p>
+        </div>
+    </div>
+    
+    <script>
+        function showContent(id) {
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
